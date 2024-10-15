@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lettra</title>
+</head>
+<style>
+
+  :root {
+    --footer-color: #444;
+    --body-color: #fff;
+  }
+
+  html { 
+    background: url(assets/images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: var(--body-color);
+    font-family: 'Lucida Grande', sans-serif;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 5rem;
+    color: var(--body-color);
+    animation: glow 10s infinite alternate;
+  }
+
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 0px #fff;
+    } 
+
+    100% {
+      text-shadow: 0 0 10px #fff;
+    }
+  }
+
+  footer {
+    margin-block: 1rem;
+    text-align: center;
+    color: var(--footer-color);
+    font-size: 0.75rem;
+    margin-inline: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer a {
+    margin-left: 15px;
+    color: var(--footer-color);
+    white-space: nowrap;
+  }
+
+</style>
+<body>
+  <main>
+    <h1 style="margin-block: 8rem">Lettra.</h1>
+    <h2>A new platform to save the web.</h2>
+    <em>Coming 2025</em>
+  </main>
+  <footer>
+    <strong>© Sagebrush, Inc.</strong>
+    <a href="#">Help</a>
+    <a href="#">What's New</a>
+    <a href="#">Content Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Privacy Policy</a>
+  </footer>
+</body>
+</html>
